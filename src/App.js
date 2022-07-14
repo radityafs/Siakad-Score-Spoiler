@@ -16,7 +16,7 @@ function App() {
       setLoading(true);
 
       await axios
-        .post(process.env.ENDPOINT_URL, {
+        .post('http://34.209.228.221:8000/getnilai', {
           token: token
         })
         .then((res) => {
